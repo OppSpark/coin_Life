@@ -19,7 +19,7 @@ const Login = ({ setIsloggedin }) => {
             .then((res) => res.json())
             .then((data) => {
                 document.cookie =
-                    "name=" + data.name + "; Domain=.718281.com; Path=/";
+                    "name=" + data.name + "; Domain=localhost; Path=/";
 
                 switch (data.result) {
                     case "already_login":

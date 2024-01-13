@@ -18,7 +18,7 @@ app.use(
         resave: false,
         saveUninitialized: false,
         cookie: {
-            domain: "localhost:8088",
+            domain: "localhost",
             sameSite: false,
             httpOnly: true,
             secure: false,

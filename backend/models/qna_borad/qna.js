@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 const path = require("path");
-const mysql = require("mysql");
+const mysql = require("mysql2");
 const mainModulePath = path.dirname(require.main.filename);
 const dbconfig = require(path.resolve(mainModulePath, "../config/dbinfo.js"));
 const connection = mysql.createConnection(dbconfig);
