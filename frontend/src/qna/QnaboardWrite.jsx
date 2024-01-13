@@ -10,7 +10,7 @@ const QnaboardWrite = () => {
     const navigate = useNavigate();
 
     const vaild_write = async () => {
-        await fetch("http://api.718281.com:8088/vaildlogin", {
+        await fetch("http://localhost:8088/vaildlogin", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -35,7 +35,7 @@ const QnaboardWrite = () => {
     }, []);
 
     const handleSubmit = async ({ title, question }) => {
-        await fetch("http://api.718281.com:8088/qna", {
+        await fetch("http://localhost:8088/qna", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

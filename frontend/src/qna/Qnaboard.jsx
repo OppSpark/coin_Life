@@ -7,7 +7,7 @@ const Qnaboard = () => {
 
     useEffect(() => {
         const fetchPosts = async () => {
-            const response = await fetch("http://api.718281.com:8088/qna", {
+            const response = await fetch("http://localhost:8088/qna", {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json",

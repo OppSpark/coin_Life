@@ -9,7 +9,7 @@ const Signup = () => {
     const navigate = useNavigate();
 
     const handleSignup = async () => {
-        await fetch("http://api.718281.com:8088/register", {
+        await fetch("http://localhost:8088/register", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
