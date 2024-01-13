@@ -1,7 +1,7 @@
 module.exports = {
-    host: "localhost",
+    host: "100.115.5.64",
     port: 3306,
-    user: "manager",
-    password: "Sk6@ibE9h&X6Oph#m2",
+    user: "oppspark",
+    password: "1515",
     database: "coindb",
 };
