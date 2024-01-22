@@ -14,5 +14,6 @@
 
 ## 기능 소개
 
+<img width="1792" alt="스크린샷 2024-01-22 13 59 47" src="https://github.com/OppSpark/2024_Coin_project/assets/137988657/e2e08380-f9d4-4348-a42c-b0a3b4ea3e42">
 
   
