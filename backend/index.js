@@ -3,6 +3,7 @@ const express = require("express");
 const app = express();
 const port = 8088;
 
+const mysql = require("mysql2");
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 const session = require("express-session");
