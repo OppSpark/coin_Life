@@ -12,6 +12,28 @@
 - Node,js, Express
 - MySQL
 
+
+## 설계 및 기능 구현
+
+
+
+### DB 설계도
+
+![image](https://github.com/OppSpark/2024_Coin_project/assets/137988657/08961674-b34d-433a-aa36-a94a0a9e5054)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## 페이지 소개
 
 ### 메인 페이지
