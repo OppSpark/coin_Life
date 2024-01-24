@@ -24,7 +24,7 @@
 
 
 
-### SQL Injection 차단 및 
+### SQL Injection 차단
 
 - 선처리 방식을 이용해 SQL 인젝션을 차단했습니다.
 
