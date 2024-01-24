@@ -16,7 +16,7 @@
 ## 설계 및 기능 구현
 
 ### DB 설계도
-DM 설계도 입니다.
+- DM 설계도 입니다.
 
 ![image](https://github.com/OppSpark/2024_Coin_project/assets/137988657/08961674-b34d-433a-aa36-a94a0a9e5054)
 
@@ -24,16 +24,31 @@ DM 설계도 입니다.
 
 
 
-### SQL Injection 차단
+### SQL Injection 차단 및 
 
 - 선처리 방식을 이용해 SQL 인젝션을 차단했습니다.
 
 <img width="818" alt="스크린샷 2024-01-24 15 45 16" src="https://github.com/OppSpark/2024_Coin_project/assets/137988657/f86580e5-1034-4ef3-b691-16346986901d">
 
 
-
 <img width="285" alt="스크린샷 2024-01-24 15 44 01" src="https://github.com/OppSpark/2024_Coin_project/assets/137988657/62a94150-091e-4b9a-87be-8f9f826827e7">
 
+
+
+### 회원가입 기능
+
+- 회원가입 시 예외처리를 했습니다.
+
+- PW 를 DB에 저장 시 평문으로 저장합니다.
+- 추 후 수정 예정입니다.
+
+<img width="787" alt="스크린샷 2024-01-24 16 11 18" src="https://github.com/OppSpark/2024_Coin_project/assets/137988657/f2b375fc-0a91-4df9-bd29-32fa19b71272">
+
+
+
+
+### 로그인 기능
+- 
 
 
 
