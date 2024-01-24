@@ -27,6 +27,11 @@ DM 설계도 입니다.
 ### SQL Injection 차단
 
 - 선처리 방식을 이용해 SQL 인젝션을 차단했습니다.
+
+<img width="818" alt="스크린샷 2024-01-24 15 45 16" src="https://github.com/OppSpark/2024_Coin_project/assets/137988657/f86580e5-1034-4ef3-b691-16346986901d">
+
+
+
 <img width="285" alt="스크린샷 2024-01-24 15 44 01" src="https://github.com/OppSpark/2024_Coin_project/assets/137988657/62a94150-091e-4b9a-87be-8f9f826827e7">
 
 
