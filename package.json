@@ -1,5 +1,9 @@
 {
   "dependencies": {
+<<<<<<< HEAD
     "mysql2": "^3.0.0"
+=======
+    "mysql": "^2.18.1"
+>>>>>>> origin/dev
   }
 }
