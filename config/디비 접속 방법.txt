@@ -1,0 +1,13 @@
+
+config 디렉토리에
+dbinfo.js
+생성
+
+아래 내용을 담을 것
+
+module.exports = {
+    host: "",
+    user: "",
+    password: "",
+    database: "coindb",
+};
