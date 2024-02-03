@@ -1,12 +1,13 @@
 import "./Freeboard.css";
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 
 const Freeboard = () => {
     const [posts, setPosts] = useState([]);
+    const [id, setId] = useState(1);
 
     const fetchPosts = async () => {
-        await fetch("http://localhost:8088/free", {
+        await fetch(`http://localhost:8088/free?reqPage=${id}`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
@@ -23,7 +24,7 @@ const Freeboard = () => {
 
     useEffect(() => {
         fetchPosts();
-    }, []);
+    }, [id]);
 
     return (
         <div className="freeboard">
@@ -37,7 +38,7 @@ const Freeboard = () => {
                         >
                             {post.title}
                         </Link>
-                        
+
                         <Link
                             className="detailbtn title2"
                             to={`/freeboard/${post.id}`}
@@ -45,7 +46,10 @@ const Freeboard = () => {
                             {post.content}
                         </Link>
                         <span className="author">{post.userid}</span>
-                        <span className="created">{new Date(post.created).toLocaleDateString('ko-KR')} {new Date(post.created).toLocaleTimeString('ko-KR')}</span>
+                        <span className="created">
+                            {new Date(post.created).toLocaleDateString("ko-KR")}{" "}
+                            {new Date(post.created).toLocaleTimeString("ko-KR")}
+                        </span>
                         <span className="view">{post.view}</span>
                     </li>
                 ))}
@@ -53,6 +57,26 @@ const Freeboard = () => {
             <Link className="writebtn" to="/freeboard/write">
                 새 글 쓰기
             </Link>
+
+            <div className="pagebtn">
+                <button
+                    onClick={() => {
+                        if (id > 1) {
+                            setId(id - 1);
+                        }
+                    }}
+                >
+                    이전
+                </button>
+                <span>&nbsp;&nbsp; {id} &nbsp;&nbsp;</span>
+                <button
+                    onClick={() => {
+                        setId(id + 1);
+                    }}
+                >
+                    다음
+                </button>
+            </div>
         </div>
     );
 };

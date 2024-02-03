@@ -150,9 +150,6 @@ const FreeboardDetail = () => {
                 {comments.map((comm) => (
                     <div className="freeComment" key={comm.id}>
                         <p>작성자: {comm.userid}</p>
-
-                       
-                        
                         <p>작성 시간: {new Date(comm.created).toLocaleDateString('ko-KR')} {new Date(comm.created).toLocaleTimeString('ko-KR')}</p>
                         <p>작성 내용: {comm.content}</p>
                         <hr />
