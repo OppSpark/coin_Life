@@ -4,10 +4,11 @@ import { Link } from "react-router-dom";
 
 const Qnaboard = () => {
     const [posts, setPosts] = useState([]);
+    const [id, setId] = useState(1);
 
     useEffect(() => {
         const fetchPosts = async () => {
-            const response = await fetch("http://localhost:8088/qna", {
+            const response = await fetch(`http://localhost:8088/qna?reqPage=${id}`, {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json",
@@ -27,7 +28,7 @@ const Qnaboard = () => {
                 });
         };
         fetchPosts();
-    }, []);
+    }, [id]);
 
     return (
         <div className="freeboard">
@@ -52,6 +53,26 @@ const Qnaboard = () => {
             <Link className="writebtn" to="/qnaboard/write">
                 새 질문 쓰기
             </Link>
+
+            <div className="pagebtn">
+                <button
+                    onClick={() => {
+                        if (id > 1) {
+                            setId(id - 1);
+                        }
+                    }}
+                >
+                    이전
+                </button>
+                <span>&nbsp;&nbsp; {id} &nbsp;&nbsp;</span>
+                <button
+                    onClick={() => {
+                        setId(id + 1);
+                    }}
+                >
+                    다음
+                </button>
+            </div>
         </div>
     );
 };
