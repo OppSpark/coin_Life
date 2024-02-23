@@ -34,8 +34,8 @@
 - OS : Ubuntu, MacOS, Windows10
 - Runtime : nodeJS
 - IDE : VScode
-- Framework : Express.JS
-- Library : React
+- Framework : Express
+- Library : React Three.js
 - Server: AWS EC2, OracleCloud
 - DataBase : EC2- > Docker -> MySQL
 
@@ -63,41 +63,9 @@
 
 
 
-### SQL Injection 차단
-
-- 선처리 방식을 이용해 SQL 인젝션을 차단했습니다.
-
-<img width="818" alt="스크린샷 2024-01-24 15 45 16" src="https://github.com/OppSpark/2024_Coin_project/assets/137988657/f86580e5-1034-4ef3-b691-16346986901d">
-
-
-<img width="285" alt="스크린샷 2024-01-24 15 44 01" src="https://github.com/OppSpark/2024_Coin_project/assets/137988657/62a94150-091e-4b9a-87be-8f9f826827e7">
-
-
-
-### 회원가입 기능
-
-- 회원가입 시 예외처리를 했습니다.
-
-- PW 를 DB에 저장 시 평문으로 저장합니다.
-- 추 후 수정 예정입니다.
-
-<img width="787" alt="스크린샷 2024-01-24 16 11 18" src="https://github.com/OppSpark/2024_Coin_project/assets/137988657/f2b375fc-0a91-4df9-bd29-32fa19b71272">
-
-
-
-
-### 로그인 기능
-- 로그인 기능 코드입니다.
-- 예외처리
-
-<img width="486" alt="스크린샷 2024-02-02 04 49 15" src="https://github.com/OppSpark/2024_Coin_project/assets/137988657/8535239a-f191-4753-b430-e73782583a71">
-
-
-
 ## 페이지 소개
 
 ### 메인 페이지
-- three.js 를 이용해 3D를 표현했습니다.
 <img width="1792" alt="스크린샷 2024-01-22 13 59 47" src="https://github.com/OppSpark/2024_Coin_project/assets/137988657/e2e08380-f9d4-4348-a42c-b0a3b4ea3e42">
 
 
@@ -112,8 +80,6 @@
 
 ### 자유게시판
 - 자유게시판 입니다.
-- Map를 이용해 게시글을 표시합니다.
-
 <img width="1792" alt="스크린샷 2024-01-22 14 36 49" src="https://github.com/OppSpark/2024_Coin_project/assets/137988657/939ea3f5-4f84-4bd2-9c57-e60a04837a9b">
 
 
@@ -128,9 +94,8 @@
 
 
 ### 자유게시판 수정, 삭제
-- 수정기능과 삭제 기능입니다.
+- 수정, 삭제 기능입니다.
 - 글 작성자만 수정 삭제가 가능합니다.
-- 
 <img width="1792" alt="스크린샷 2024-01-22 14 37 23" src="https://github.com/OppSpark/2024_Coin_project/assets/137988657/4e24746c-9454-4ecc-920e-327bab86e582">
 <img width="1792" alt="스크린샷 2024-01-22 14 39 06" src="https://github.com/OppSpark/2024_Coin_project/assets/137988657/4f1d7398-970c-40b0-a221-7f81000c5480">
 
@@ -148,7 +113,6 @@
 ### 회원가입 및 로그인 기능
 
 - 회원가입과 로그인 기능입니다.
-- 
 
 <img width="1588" alt="스크린샷 2024-01-22 15 26 49" src="https://github.com/OppSpark/2024_Coin_project/assets/137988657/40c5c67f-98ec-4ce8-91e9-db9632168fee">
 
