@@ -42,7 +42,7 @@
 ### 프론트엔드
 - HTML
 - CSS
-- JS
+- three.js
 - React
 
 ### 백엔드
@@ -50,6 +50,50 @@
 - Express
 - MySQL
 - Nginx
+
+## 실행 방법
+---
+### config 디렉토리
+- mainDB.sql 파일을 MySQL에 import
+
+- dbinfo.js 파일 생성
+
+```
+module.exports = {
+    host: "호스트",
+    user: "사용자 명",
+    password: "비밀번호",
+    database: "coindb",
+};
+```
+해당 내용 입력
+
+### backend 디렉토리
+- 해당 디렉토리에 설치
+```
+npm install express
+npm install cookie-parser
+npm install cors
+npm install express-session
+npm install mysql2@3.0
+
+```
+
+
+### frontend 디렉토리
+- 해당 디렉토리에 설치
+```
+npm install js-cookie
+npm install react
+npm install react-dom
+npm install react-router-dom
+npm install react-scripts
+npm install react-google-charts
+npm install web-vitals
+npm install three @types/three @react-three/fiber
+npm install @react-three/drei
+
+```
 
 
 # 설계 및 기능 구현
