@@ -23,14 +23,14 @@ const Signup = () => {
                         alert("이미 존재하는 아이디입니다.");
                         break;
                     case "data_too_long":
-                        alert("id 혹은 pw가 너무 깁니다.");
+                        alert("아이디 또는 비밀번호가 너무 깁니다.");
                         break;
                     case "register_success":
                         alert("회원가입 되었습니다. 로그인 후 이용해 주세요.");
                         navigate("/login");
                         break;
                     case "invaild_value":
-                        alert("id 혹은 pw를 입력해 주세요.");
+                        alert("아이디 또는 비밀번호를 입력해 주세요.");
                         break;
                     case "register_fail":
                         alert("회원가입에 실패하였습니다.");

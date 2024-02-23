@@ -8,7 +8,15 @@ const dbconfig = require(path.resolve(mainModulePath, "../config/dbinfo.js"));
 const connection = mysql.createConnection(dbconfig);
 
 
+
 router.get("/free", (req, res) => {
+    const sql = "SELECT * FROM freeboard ORDER BY ID DESC LIMIT ? OFFSET ?;";
+    let pageNo = req.query.reqPage;
+
+    const offset = (pageNo - 1) * 10;
+    const params = [10, offset];
+    
+    connection.query(sql, params, (err, rows) => {
     const sql = "SELECT * FROM freeboard ORDER BY ID DESC LIMIT ? OFFSET ?;";
     let pageNo = req.query.reqPage;
 

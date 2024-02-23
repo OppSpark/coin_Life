@@ -101,12 +101,15 @@ const QnaboardDetail = () => {
     return (
         <div className="qnaboarddetail">
             <div>
-                <h1>{title}</h1>
+                <h3>{title}</h3>
                 <p>{content}</p>
-                <p>작성자: {author}</p>
-                <p>작성 시간:{new Date(created).toLocaleDateString('ko-KR')} {new Date(created).toLocaleTimeString('ko-KR')}</p>
-                
-                <p>조회수: {view}</p>
+                <br />
+                <p>
+                    작성자: {author} &nbsp;&nbsp;&nbsp;&nbsp;작성 시간:
+                    {new Date(created).toLocaleDateString("ko-KR")}{" "}
+                    {new Date(created).toLocaleTimeString("ko-KR")}{" "}
+                    &nbsp;&nbsp;&nbsp;&nbsp;조회수: {view}
+                </p>
 
                 <Link to={`/qnaboard/edit/${boardid}`}>
                     <button type="button" className="post_edit">
@@ -119,7 +122,6 @@ const QnaboardDetail = () => {
             {comments.length === 0 && (
                 <>
                     <p>답변 입력하기</p>
-
                     <textarea
                         id="comment_txt"
                         name="comment"
@@ -136,13 +138,15 @@ const QnaboardDetail = () => {
             )}
 
             <h3>ANSWER</h3>
-
             <div className="qnaComment">
                 {comments.map((comm) => (
                     <div key={comm.id}>
                         <p>작성자: {comm.userid}</p>
-                        <p>작성 시간:{new Date(comm.created).toLocaleDateString('ko-KR')} {new Date(comm.created).toLocaleTimeString('ko-KR')}</p>
-
+                        <p>
+                            작성 시간:
+                            {new Date(comm.created).toLocaleDateString("ko-KR")}{" "}
+                            {new Date(comm.created).toLocaleTimeString("ko-KR")}
+                        </p>
                         <p>작성 내용{comm.answer}</p>
                         <hr></hr>
                     </div>
