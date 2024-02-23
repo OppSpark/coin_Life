@@ -72,7 +72,7 @@ const FreeboardEdit = () => {
             .then((data) => {
                 switch (data.result) {
                     case "no_session":
-                        alert("로그인을 하고 작성하세요.");
+                        alert("로그인 후 이용해 주세요.");
                         navigate("/login");
                         break;
                     case "invaild_value":

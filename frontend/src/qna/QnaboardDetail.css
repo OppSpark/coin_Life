@@ -43,7 +43,7 @@
     display: inline-block;
     color: #007bff;
     text-decoration: none;
-    margin-top: 20px;
+
     padding: 10px 20px;
     border: 1px solid #007bff;
     border-radius: 5px;
@@ -55,7 +55,7 @@
 }
 
 .qnaboarddetail textarea {
-     width: 100%;
+    width: 100%;
     height: 100px;
     margin-top: 20px;
     padding: 10px;
@@ -86,8 +86,6 @@
 }
 
 .qnaboarddetail .qnaComment {
-    width: 100%;
-    padding: 10px;
     border-bottom: 1px solid #ddd;
 }
 

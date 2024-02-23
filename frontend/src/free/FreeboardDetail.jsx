@@ -112,23 +112,23 @@ const FreeboardDetail = () => {
     return (
         <div className="freeboarddetail">
             <div className="post">
-                <h1 className="title">{title}</h1>
+                <h3 className="title">{title}</h3>
                 <hr />
                 <p>{content}</p>
                 <hr />
                 <p>작성자: {author}</p>
-                <p>작성 시간:{new Date(created).toLocaleDateString('ko-KR')} {new Date(created).toLocaleTimeString('ko-KR')}</p>
-                
+                <p>
+                    작성 시간:{new Date(created).toLocaleDateString("ko-KR")}{" "}
+                    {new Date(created).toLocaleTimeString("ko-KR")}
+                </p>
                 <p>조회수: {view}</p>
-
                 <Link className="post_edit" to={`/freeboard/edit/${boardid}`}>
                     개시글 수정
                 </Link>
             </div>
 
-            <hr />
+            <br />
             <p>댓글 입력하기</p>
-
             <textarea
                 id="comment_txt"
                 name="comment"
@@ -142,16 +142,20 @@ const FreeboardDetail = () => {
                 댓글 등록
             </button>
 
-            <hr />
-
             <h3>댓글</h3>
 
             <div className="freeComment-list">
                 {comments.map((comm) => (
                     <div className="freeComment" key={comm.id}>
-                        <p>작성자: {comm.userid}</p>
-                        <p>작성 시간: {new Date(comm.created).toLocaleDateString('ko-KR')} {new Date(comm.created).toLocaleTimeString('ko-KR')}</p>
-                        <p>작성 내용: {comm.content}</p>
+                        <p className="CommentContnet">작성자: {comm.userid}</p>
+                        <p className="CommentContnet">
+                            작성 시간:{" "}
+                            {new Date(comm.created).toLocaleDateString("ko-KR")}{" "}
+                            {new Date(comm.created).toLocaleTimeString("ko-KR")}
+                        </p>
+                        <p className="CommentContnet">
+                            작성 내용: {comm.content}
+                        </p>
                         <hr />
                     </div>
                 ))}

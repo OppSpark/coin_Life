@@ -23,17 +23,17 @@ const Login = ({ setIsloggedin }) => {
 
                 switch (data.result) {
                     case "already_login":
-                        alert("이미 로그인 하셨습니다.");
+                        alert("이미 로그인 되었습니다..");
                         break;
                     case "no_user":
-                        alert("id 혹은 pw가 틀렸습니다.");
+                        alert("아이디 또는 비밀번호를 틀렸습니다.");
                         break;
                     case "login_success":
                         setIsloggedin(true);
                         navigate("/");
                         break;
                     case "invaild_value":
-                        alert("id 혹은 pw를 입력해 주세요.");
+                        alert("아이디 또는 비밀번호를 입력해 주세요.");
                         break;
                     default:
                         alert("서버에 오류가 생겼습니다. 잠시 후 시도하세요.");
