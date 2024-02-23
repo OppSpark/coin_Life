@@ -81,21 +81,15 @@
 }
 
 .freeboarddetail .freeComment-list {
-
-    border: 1px solid #ddd;
-    border-radius: 10px;
-
+    width: 100%;
+    margin-top: 30px;
 }
 
 .freeboarddetail .freeComment {
-    margin: 0px;
-
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
 }
-.CommentContnet {
-    padding-left: 20px;
-    
-}
-
 
 .freeboarddetail .freeComment:last-child {
     border: none;
