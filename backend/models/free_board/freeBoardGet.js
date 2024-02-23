@@ -21,8 +21,13 @@ router.get("/free", (req, res) => {
 });
 
 
-
-
+router.get("/free/count", (req, res) => {
+    const sql = "SELECT COUNT(*) AS cnt FROM freeboard";
+    connection.query(sql, (err, rows) => {
+        let pagelength = Math.ceil(rows[0].cnt / 10);
+        return res.send({pagelength});
+    });
+});
 
 
 router.get("/free/:id", (req, res) => {
