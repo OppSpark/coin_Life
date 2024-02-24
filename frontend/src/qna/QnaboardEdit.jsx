@@ -9,7 +9,7 @@ const QnaboardEdit = () => {
     const navigate = useNavigate();
 
     const editVaildCheck = async ({ boardid }) => {
-        await fetch(`http://localhost:8088/qna/${boardid}`, {
+        await fetch(`http://api.coin.oppspark.net/qna/${boardid}`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -34,7 +34,7 @@ const QnaboardEdit = () => {
     };
 
     const fetchPost = async ({ id }) => {
-        await fetch(`http://localhost:8088/qna/${id}`, {
+        await fetch(`http://api.coin.oppspark.net/qna/${id}`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
@@ -62,7 +62,7 @@ const QnaboardEdit = () => {
 
     const handleSubmit = async ({ postid }) => {
         console.log({ postid });
-        await fetch(`http://localhost:8088/qna/${postid}`, {
+        await fetch(`http://api.coin.oppspark.net/qna/${postid}`, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json",
@@ -107,7 +107,7 @@ const QnaboardEdit = () => {
 
     const handlDelete = async ({ postid }) => {
         const response = await fetch(
-            `http://localhost:8088/qna/${postid}`,
+            `http://api.coin.oppspark.net/qna/${postid}`,
             {
                 method: "DELETE",
                 headers: {

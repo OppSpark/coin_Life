@@ -4,7 +4,7 @@ const Logout = ({ setIsloggedin }) => {
     const navigate = useNavigate();
 
     const handleLogout = () => {
-        fetch("http://localhost:8088/logout", {
+        fetch("http://api.coin.oppspark.net/logout", {
             method: "DELETE",
             headers: {
                 "Content-Type": "application/json",
