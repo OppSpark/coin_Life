@@ -7,7 +7,7 @@ const Freeboard = () => {
     const [id, setId] = useState(1);
 
     const fetchPosts = async () => {
-        await fetch(`http://localhost:8088/free?reqPage=${id}`, {
+        await fetch(`http://api.oppspark.net/free?reqPage=${id}`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",

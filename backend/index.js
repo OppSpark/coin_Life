@@ -18,7 +18,7 @@ app.use(
         resave: false,
         saveUninitialized: false,
         cookie: {
-            domain: "localhost",
+            domain: ".oppspark.net",
             sameSite: false,
             httpOnly: true,
             secure: false,
@@ -82,5 +82,5 @@ app.use("/", post);
 //질문 게시판
 
 app.listen(port, () => {
-    console.log(`Example app listening at http://localhost:${port}`);
+    console.log(`Example app listening at http://api.oppspark.net:${port}`);
 });

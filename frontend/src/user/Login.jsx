@@ -8,7 +8,7 @@ const Login = ({ setIsloggedin }) => {
     const navigate = useNavigate();
 
     const handleLogin = () => {
-        fetch("http://localhost:8088/login", {
+        fetch("http://api.oppspark.net/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -19,7 +19,7 @@ const Login = ({ setIsloggedin }) => {
             .then((res) => res.json())
             .then((data) => {
                 document.cookie =
-                    "name=" + data.name + "; Domain=localhost; Path=/";
+                    "name=" + data.name + "; Domain=.oppspark.net; Path=/";
 
                 switch (data.result) {
                     case "already_login":

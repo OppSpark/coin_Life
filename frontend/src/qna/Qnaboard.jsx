@@ -8,7 +8,7 @@ const Qnaboard = () => {
 
     useEffect(() => {
         const fetchPosts = async () => {
-            const response = await fetch(`http://localhost:8088/qna?reqPage=${id}`, {
+            const response = await fetch(`http://api.oppspark.net/qna?reqPage=${id}`, {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json",
