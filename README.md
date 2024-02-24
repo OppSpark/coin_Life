@@ -1,6 +1,7 @@
 # 코인 라이프 프로젝트
 ## 서비스중
-https://coin.oppspark.net/
+- HTTP 로 접속해야합니다!
+[http://coin.oppspark.net/](http://coin.oppspark.net/coinchart)
 
 
 ## 프로젝트 소개
