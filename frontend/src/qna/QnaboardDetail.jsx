@@ -17,7 +17,7 @@ const QnaboardDetail = () => {
     const { id: boardid } = useParams();
 
     const getfboard = async ({ id }) => {
-        await fetch(`http://api.oppspark.net/qna/${id}`, {
+        await fetch(`http://api.coin.oppspark.net/qna/${id}`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
@@ -38,7 +38,7 @@ const QnaboardDetail = () => {
 
     const getcomment = async ({ id }) => {
         await fetch(
-            `http://api.oppspark.net/qna/${id}
+            `http://api.coin.oppspark.net/qna/${id}
     /answer`,
             {
                 method: "GET",
@@ -68,7 +68,7 @@ const QnaboardDetail = () => {
     const commentUpload = async ({ boardid, comment }) => {
         console.log("보내는 값:", { boardid, comment });
 
-        await fetch(`http://api.oppspark.net/qna/${boardid}/answer`, {
+        await fetch(`http://api.coin.oppspark.net/qna/${boardid}/answer`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

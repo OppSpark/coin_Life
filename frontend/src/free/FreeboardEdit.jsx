@@ -9,7 +9,7 @@ const FreeboardEdit = () => {
     const navigate = useNavigate();
 
     const editVaildCheck = async ({ boardid }) => {
-        await fetch(`http://api.oppspark.net/free/${boardid}`, {
+        await fetch(`http://api.coin.oppspark.net/free/${boardid}`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -33,7 +33,7 @@ const FreeboardEdit = () => {
     };
 
     const fetchPost = async ({ id }) => {
-        await fetch(`http://api.oppspark.net/free/${id}`, {
+        await fetch(`http://api.coin.oppspark.net/free/${id}`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
@@ -60,7 +60,7 @@ const FreeboardEdit = () => {
     }, [postid]);
 
     const handleSubmit = async ({ postid }) => {
-        await fetch(`http://api.oppspark.net/free/${postid}`, {
+        await fetch(`http://api.coin.oppspark.net/free/${postid}`, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json",
@@ -104,7 +104,7 @@ const FreeboardEdit = () => {
     };
 
     const handlDelete = async ({ postid }) => {
-        await fetch(`http://api.oppspark.net/free/${postid}`, {
+        await fetch(`http://api.coin.oppspark.net/free/${postid}`, {
             method: "DELETE",
             headers: {
                 "Content-Type": "application/json",

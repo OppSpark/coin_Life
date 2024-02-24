@@ -9,7 +9,7 @@ const FreeboardWrite = () => {
     const navigate = useNavigate();
 
     const vaild_write = async () => {
-        await fetch("http://api.oppspark.net/vaildlogin", {
+        await fetch("http://api.coin.oppspark.net/vaildlogin", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -34,7 +34,7 @@ const FreeboardWrite = () => {
     }, []);
 
     const handleSubmit = async ({ title, content }) => {
-        await fetch("http://api.oppspark.net/free", {
+        await fetch("http://api.coin.oppspark.net/free", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

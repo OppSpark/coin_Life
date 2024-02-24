@@ -9,7 +9,7 @@ const Signup = () => {
     const navigate = useNavigate();
 
     const handleSignup = async () => {
-        await fetch("http://api.oppspark.net/register", {
+        await fetch("http://api.coin.oppspark.net/register", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

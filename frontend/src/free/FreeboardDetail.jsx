@@ -17,7 +17,7 @@ const FreeboardDetail = () => {
     const { id: boardid } = useParams();
 
     const getfboard = async ({ id }) => {
-        await fetch(`http://api.oppspark.net/free/${id}`, {
+        await fetch(`http://api.coin.oppspark.net/free/${id}`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
@@ -37,7 +37,7 @@ const FreeboardDetail = () => {
     };
 
     const getcomment = async ({ id }) => {
-        await fetch(`http://api.oppspark.net/free/${id}/comment`, {
+        await fetch(`http://api.coin.oppspark.net/free/${id}/comment`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
@@ -62,7 +62,7 @@ const FreeboardDetail = () => {
     }, [boardid]);
 
     const commentUpload = async ({ boardid, comment }) => {
-        await fetch(`http://api.oppspark.net/free/${boardid}/comment`, {
+        await fetch(`http://api.coin.oppspark.net/free/${boardid}/comment`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

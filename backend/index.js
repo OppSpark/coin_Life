@@ -82,5 +82,5 @@ app.use("/", post);
 //질문 게시판
 
 app.listen(port, () => {
-    console.log(`Example app listening at http://api.oppspark.net:${port}`);
+    console.log(`Example app listening at http://api.coin.oppspark.net:${port}`);
 });

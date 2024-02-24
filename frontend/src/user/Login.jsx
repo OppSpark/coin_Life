@@ -8,7 +8,7 @@ const Login = ({ setIsloggedin }) => {
     const navigate = useNavigate();
 
     const handleLogin = () => {
-        fetch("http://api.oppspark.net/login", {
+        fetch("http://api.coin.oppspark.net/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
