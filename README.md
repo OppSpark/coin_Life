@@ -32,6 +32,9 @@
 
 # 개발 환경
 
+![이미지 2024  3  3  16 59](https://github.com/OppSpark/coin_Life/assets/137988657/1e71d5a3-20a7-4211-9bb3-9d4122fa6f7d)
+
+
 ## 개발 도구
 - OS : Ubuntu, MacOS, Windows10
 - Runtime : nodeJS
