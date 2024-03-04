@@ -32,7 +32,8 @@
 
 # 개발 환경
 
-![이미지 2024  3  3  16 59](https://github.com/OppSpark/coin_Life/assets/137988657/1e71d5a3-20a7-4211-9bb3-9d4122fa6f7d)
+
+![readme mdpng](https://github.com/OppSpark/coin_Life/assets/137988657/11c0bae3-ee94-4408-932d-240be540356d)
 
 
 ## 개발 도구
