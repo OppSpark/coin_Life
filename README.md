@@ -21,14 +21,15 @@
 
 - 2024년 01월 13일 ~ ...
 - 프로젝트가 끝나고 개인 프로젝트로 전환
+    - 2024년 3월 : 페이지네이션 구현
     - 버그 수정, 기능 업데이트 중
 
 ## 팀원
-하민우 : PM, FullStack 개발
-박준규 : Backend 매니저
-강다은 : Frontend 매니저
-강동협 : Frontend 개발
-안제혁 : Frontend 개발
+- 하민우 : PM, FullStack 개발
+- 박준규 : Backend 매니저
+- 강다은 : Frontend 매니저
+- 강동협 : Frontend 개발
+- 안제혁 : Frontend 개발
 
 # 개발 환경
 
