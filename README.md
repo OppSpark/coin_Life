@@ -25,7 +25,7 @@
     - 버그 수정, 기능 업데이트 중
 
 ## 팀원
-- 하민우 : PM, FullStack 개발
+- 하민우 : PM
 - 박준규 : Backend 매니저
 - 강다은 : Frontend 매니저
 - 강동협 : Frontend 개발
